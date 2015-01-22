@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--HomeVC-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController storyboardIdentifier="HomeVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vXZ-lx-hvc" customClass="HomeVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqR-WF-McX">
+                                <rect key="frame" x="16" y="304" width="568" height="44"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="bWj-xt-8Gd"/>
+                                    <constraint firstAttribute="height" constant="44" id="vU3-yq-Fdx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Show Interstitial">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnShowInterstitialAd_Act:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="RNO-8I-Xtx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9HW-kg-RP6">
+                                <rect key="frame" x="16" y="252" width="568" height="44"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="QqL-gZ-wop"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="sQL-cQ-vI3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Toggle Banner">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnToggleBannerAd_Act:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ix9-EF-lMY"/>
+                                </connections>
+                            </button>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yQD-97-hsw">
+                                <rect key="frame" x="0.0" y="550" width="600" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="10" id="7Ir-Tf-jsw"/>
+                                    <constraint firstAttribute="height" constant="50" id="IU9-to-Ylm"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="2vt-aa-MWb" kind="embed" identifier="embedBanner_iAdVC" id="XeF-zk-xru"/>
+                                </connections>
+                            </containerView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="IfJ-Dq-Rao">
+                                <rect key="frame" x="552" y="316" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Hys-iJ-g5D"/>
+                                    <constraint firstAttribute="width" constant="20" id="M6H-nO-8LP"/>
+                                </constraints>
+                            </activityIndicatorView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="CY2-K5-gJ4">
+                                <rect key="frame" x="552" y="264" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="TaO-pd-Mqv"/>
+                                    <constraint firstAttribute="width" constant="20" id="b2l-P2-ChU"/>
+                                </constraints>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="9HW-kg-RP6" secondAttribute="trailing" constant="16" id="2yR-kG-ZTH"/>
+                            <constraint firstAttribute="trailing" secondItem="aqR-WF-McX" secondAttribute="trailing" constant="16" id="42Z-Ak-tHh"/>
+                            <constraint firstAttribute="centerY" secondItem="9HW-kg-RP6" secondAttribute="centerY" constant="26" id="4Fg-Mm-TyP"/>
+                            <constraint firstItem="9HW-kg-RP6" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="5mL-eH-gj3"/>
+                            <constraint firstItem="yQD-97-hsw" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="CaJ-KA-HH6"/>
+                            <constraint firstItem="9HW-kg-RP6" firstAttribute="centerY" secondItem="CY2-K5-gJ4" secondAttribute="centerY" id="F9x-qz-EeQ"/>
+                            <constraint firstItem="9HW-kg-RP6" firstAttribute="trailing" secondItem="CY2-K5-gJ4" secondAttribute="trailing" constant="12" id="FRU-ZY-9tQ"/>
+                            <constraint firstItem="IfJ-Dq-Rao" firstAttribute="centerY" secondItem="aqR-WF-McX" secondAttribute="centerY" constant="-0.5" id="JKm-ul-Dvb"/>
+                            <constraint firstAttribute="centerY" secondItem="aqR-WF-McX" secondAttribute="centerY" constant="-26" id="cex-dt-pTS"/>
+                            <constraint firstAttribute="trailing" secondItem="yQD-97-hsw" secondAttribute="trailing" id="jKk-Ad-H2w"/>
+                            <constraint firstItem="IfJ-Dq-Rao" firstAttribute="trailing" secondItem="aqR-WF-McX" secondAttribute="trailing" constant="-12" id="kcu-YC-lOf"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="yQD-97-hsw" secondAttribute="bottom" id="xH5-ek-aq7"/>
+                            <constraint firstItem="aqR-WF-McX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="yCZ-Df-yef"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIADBanner" destination="CY2-K5-gJ4" id="WA3-OO-phF"/>
+                        <outlet property="activityIADInterstitial" destination="IfJ-Dq-Rao" id="Aey-xn-u8s"/>
+                        <outlet property="btnShowInterstitial" destination="aqR-WF-McX" id="6DR-dh-gRB"/>
+                        <outlet property="btnToggleBanner" destination="9HW-kg-RP6" id="t2g-7j-vcH"/>
+                        <outlet property="constraintBottom_Banner" destination="xH5-ek-aq7" id="680-gc-ZGI"/>
+                        <outlet property="vwContainerBanner" destination="yQD-97-hsw" id="fSA-Ko-cRZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="405" y="377"/>
+        </scene>
+        <!--Banner i AdVC-->
+        <scene sceneID="BHe-iY-rQ7">
+            <objects>
+                <viewController storyboardIdentifier="Banner_iAdVC" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2vt-aa-MWb" customClass="Banner_iAdVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vcq-w7-ruy"/>
+                        <viewControllerLayoutGuide type="bottom" id="ton-Wq-jtd"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ucf-8j-2fK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="kkc-FB-1GX">
+                                <rect key="frame" x="140" y="0.0" width="320" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="PZ8-PB-ADp"/>
+                                    <constraint firstAttribute="height" constant="50" id="Pky-3Z-1F2"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="2vt-aa-MWb" id="90j-R6-Xc6"/>
+                                </connections>
+                            </adBannerView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="kkc-FB-1GX" secondAttribute="centerY" id="BZT-cS-6kW"/>
+                            <constraint firstAttribute="centerX" secondItem="kkc-FB-1GX" secondAttribute="centerX" id="uan-SR-N7k"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <connections>
+                        <outlet property="iAdBanner" destination="kkc-FB-1GX" id="q4o-3C-Ll9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2an-4p-DOH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1121" y="652"/>
+        </scene>
+    </scenes>
+</document>

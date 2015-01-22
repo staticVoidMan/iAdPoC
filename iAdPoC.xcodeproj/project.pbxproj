@@ -1,0 +1,342 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F2A2CFEE1A6E52170004DE05 /* Banner_iAdVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A2CFED1A6E52170004DE05 /* Banner_iAdVC.m */; };
+		F2A2CFF11A6E522E0004DE05 /* Interstitial_iAdVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A2CFF01A6E522E0004DE05 /* Interstitial_iAdVC.m */; };
+		F2A2CFF51A6E54890004DE05 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A2CFF41A6E54890004DE05 /* HomeVC.m */; };
+		F2EE241A1A6E20EC00331064 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EE24191A6E20EC00331064 /* main.m */; };
+		F2EE241D1A6E20EC00331064 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EE241C1A6E20EC00331064 /* AppDelegate.m */; };
+		F2EE24231A6E20EC00331064 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2EE24211A6E20EC00331064 /* Main.storyboard */; };
+		F2EE24251A6E20EC00331064 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2EE24241A6E20EC00331064 /* Images.xcassets */; };
+		F2EE24281A6E20EC00331064 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2EE24261A6E20EC00331064 /* LaunchScreen.xib */; };
+		F2EE243E1A6E20FB00331064 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2EE243D1A6E20FB00331064 /* iAd.framework */; };
+		F2EE24401A6E30CF00331064 /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = F2EE243F1A6E30CF00331064 /* close.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F2A2CFEC1A6E52170004DE05 /* Banner_iAdVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Banner_iAdVC.h; sourceTree = "<group>"; };
+		F2A2CFED1A6E52170004DE05 /* Banner_iAdVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Banner_iAdVC.m; sourceTree = "<group>"; };
+		F2A2CFEF1A6E522E0004DE05 /* Interstitial_iAdVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Interstitial_iAdVC.h; sourceTree = "<group>"; };
+		F2A2CFF01A6E522E0004DE05 /* Interstitial_iAdVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Interstitial_iAdVC.m; sourceTree = "<group>"; };
+		F2A2CFF31A6E54890004DE05 /* HomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
+		F2A2CFF41A6E54890004DE05 /* HomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
+		F2EE24141A6E20EC00331064 /* iAdPoC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iAdPoC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2EE24181A6E20EC00331064 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2EE24191A6E20EC00331064 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F2EE241B1A6E20EC00331064 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F2EE241C1A6E20EC00331064 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F2EE24221A6E20EC00331064 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F2EE24241A6E20EC00331064 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F2EE24271A6E20EC00331064 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F2EE243D1A6E20FB00331064 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		F2EE243F1A6E30CF00331064 /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2EE24111A6E20EC00331064 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2EE243E1A6E20FB00331064 /* iAd.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F2A2CFEA1A6E51F90004DE05 /* Banner_iAdVC */ = {
+			isa = PBXGroup;
+			children = (
+				F2A2CFEC1A6E52170004DE05 /* Banner_iAdVC.h */,
+				F2A2CFED1A6E52170004DE05 /* Banner_iAdVC.m */,
+			);
+			path = Banner_iAdVC;
+			sourceTree = "<group>";
+		};
+		F2A2CFEB1A6E51F90004DE05 /* Interstitial_iAdVC */ = {
+			isa = PBXGroup;
+			children = (
+				F2A2CFEF1A6E522E0004DE05 /* Interstitial_iAdVC.h */,
+				F2A2CFF01A6E522E0004DE05 /* Interstitial_iAdVC.m */,
+			);
+			path = Interstitial_iAdVC;
+			sourceTree = "<group>";
+		};
+		F2A2CFF21A6E547E0004DE05 /* HomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				F2A2CFF31A6E54890004DE05 /* HomeVC.h */,
+				F2A2CFF41A6E54890004DE05 /* HomeVC.m */,
+			);
+			path = HomeVC;
+			sourceTree = "<group>";
+		};
+		F2EE240B1A6E20EC00331064 = {
+			isa = PBXGroup;
+			children = (
+				F2EE243D1A6E20FB00331064 /* iAd.framework */,
+				F2EE24161A6E20EC00331064 /* iAdPoC */,
+				F2EE24151A6E20EC00331064 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F2EE24151A6E20EC00331064 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2EE24141A6E20EC00331064 /* iAdPoC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2EE24161A6E20EC00331064 /* iAdPoC */ = {
+			isa = PBXGroup;
+			children = (
+				F2EE241B1A6E20EC00331064 /* AppDelegate.h */,
+				F2EE241C1A6E20EC00331064 /* AppDelegate.m */,
+				F2EE24211A6E20EC00331064 /* Main.storyboard */,
+				F2A2CFF21A6E547E0004DE05 /* HomeVC */,
+				F2A2CFEA1A6E51F90004DE05 /* Banner_iAdVC */,
+				F2A2CFEB1A6E51F90004DE05 /* Interstitial_iAdVC */,
+				F2EE243F1A6E30CF00331064 /* close.png */,
+				F2EE24261A6E20EC00331064 /* LaunchScreen.xib */,
+				F2EE24241A6E20EC00331064 /* Images.xcassets */,
+				F2EE24171A6E20EC00331064 /* Supporting Files */,
+			);
+			path = iAdPoC;
+			sourceTree = "<group>";
+		};
+		F2EE24171A6E20EC00331064 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F2EE24181A6E20EC00331064 /* Info.plist */,
+				F2EE24191A6E20EC00331064 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F2EE24131A6E20EC00331064 /* iAdPoC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2EE24371A6E20EC00331064 /* Build configuration list for PBXNativeTarget "iAdPoC" */;
+			buildPhases = (
+				F2EE24101A6E20EC00331064 /* Sources */,
+				F2EE24111A6E20EC00331064 /* Frameworks */,
+				F2EE24121A6E20EC00331064 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iAdPoC;
+			productName = iAdPoC;
+			productReference = F2EE24141A6E20EC00331064 /* iAdPoC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2EE240C1A6E20EC00331064 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Amin Siddiqui";
+				TargetAttributes = {
+					F2EE24131A6E20EC00331064 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = F2EE240F1A6E20EC00331064 /* Build configuration list for PBXProject "iAdPoC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F2EE240B1A6E20EC00331064;
+			productRefGroup = F2EE24151A6E20EC00331064 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2EE24131A6E20EC00331064 /* iAdPoC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2EE24121A6E20EC00331064 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2EE24231A6E20EC00331064 /* Main.storyboard in Resources */,
+				F2EE24281A6E20EC00331064 /* LaunchScreen.xib in Resources */,
+				F2EE24401A6E30CF00331064 /* close.png in Resources */,
+				F2EE24251A6E20EC00331064 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2EE24101A6E20EC00331064 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2A2CFEE1A6E52170004DE05 /* Banner_iAdVC.m in Sources */,
+				F2A2CFF11A6E522E0004DE05 /* Interstitial_iAdVC.m in Sources */,
+				F2A2CFF51A6E54890004DE05 /* HomeVC.m in Sources */,
+				F2EE241D1A6E20EC00331064 /* AppDelegate.m in Sources */,
+				F2EE241A1A6E20EC00331064 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F2EE24211A6E20EC00331064 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2EE24221A6E20EC00331064 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F2EE24261A6E20EC00331064 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2EE24271A6E20EC00331064 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F2EE24351A6E20EC00331064 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F2EE24361A6E20EC00331064 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F2EE24381A6E20EC00331064 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = iAdPoC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F2EE24391A6E20EC00331064 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = iAdPoC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F2EE240F1A6E20EC00331064 /* Build configuration list for PBXProject "iAdPoC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2EE24351A6E20EC00331064 /* Debug */,
+				F2EE24361A6E20EC00331064 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2EE24371A6E20EC00331064 /* Build configuration list for PBXNativeTarget "iAdPoC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2EE24381A6E20EC00331064 /* Debug */,
+				F2EE24391A6E20EC00331064 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F2EE240C1A6E20EC00331064 /* Project object */;
+}
