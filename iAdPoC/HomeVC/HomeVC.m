@@ -50,9 +50,11 @@
     
     if (sender.selected) {
         constraintBottom_Banner.constant = 0;
+        [activityIADBanner stopAnimating];
     }
     else {
         constraintBottom_Banner.constant = -vwContainerBanner.bounds.size.height;
+        [activityIADBanner startAnimating];
     }
     
     [UIView animateWithDuration:0.27f
@@ -77,14 +79,9 @@
 
 #pragma mark - Banner_iAdVC Delegates
 -(void)requestIAdBannerCompletedWithSuccess:(BOOL)success {
-    if(success) {
-        [activityIADBanner stopAnimating];
+    if (success && !btnToggleBanner.selected) {
+        [self btnToggleBannerAd_Act:btnToggleBanner];
     }
-    else {
-        [activityIADBanner startAnimating];
-    }
-    
-    [self btnToggleBannerAd_Act:btnToggleBanner];
 }
 
 #pragma mark - Interstitial_iAdVCDelegate
